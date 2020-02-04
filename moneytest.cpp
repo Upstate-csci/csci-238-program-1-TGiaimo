@@ -10,7 +10,6 @@
 #include <iostream>
 #include <string>
 #include "money.h"
-#include "money.cpp"
 
 using namespace std;
 

@@ -18,7 +18,8 @@ string Money::toString() {
 string Money::toCurrency(double amount) {
 
     stringstream ss;
-    ss.imbue(locale(""));
+    setlocale(LC_ALL, "en_US.UTF-8");
+    //ss.imbue(locale(""));
 
     ss << showbase << put_money(amount*100);
 
